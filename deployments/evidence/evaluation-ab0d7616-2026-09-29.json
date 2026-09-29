@@ -1,0 +1,151 @@
+{
+  "checkedAt": "2026-09-29T12:01:11.524Z",
+  "endpoint": "https://studio-dev.genlayer.com/api",
+  "chainId": 61997,
+  "discovery": {
+    "method": "sim_getTransactionsForAddress",
+    "sender": "0xb1a4d9ff24d72c5df4ff73df6b1b829e4557576a",
+    "historyCount": 16,
+    "contractCandidateCount": 2,
+    "matchCount": 1,
+    "matchedRow": {
+      "hash": "0xab0d76161b329074a8294da16719de56ac9a3f5b5e21eb82f64c7a1c514cebb9",
+      "fromAddress": "0xB1A4d9Ff24D72C5dF4FF73df6B1B829e4557576a",
+      "toAddress": "0x661F31a2017CFC3Cd48D0D6b6978415FAf0A6c59",
+      "createdAt": "2026-09-29T11:33:45.533112+00:00",
+      "nonce": 15,
+      "status": "FINALIZED",
+      "calldataBase64": "FgB0ZXZhbHVhdGVfZGVsYXkEYXJncy38AXB5dGhvbi0zMTMwLWZpbmFsLTE3OTA0NDEzNjI4MjK8Amh0dHBzOi8vZGlzY3Vzcy5weXRob24ub3JnL3QvNjI2OTQuanNvbuQCaHR0cHM6Ly9kaXNjdXNzLnB5dGhvbi5vcmcvcG9zdHMvMTk1MDY5Lmpzb27kAmh0dHBzOi8vZGlzY3Vzcy5weXRob24ub3JnL3Bvc3RzLzE5NjUwNS5qc29uOQ==",
+      "calldataUtf8": "\u0016\u0000tevaluate_delay\u0004args-�\u0001python-3130-final-1790441362822�\u0002https://discuss.python.org/t/62694.json�\u0002https://discuss.python.org/posts/195069.json�\u0002https://discuss.python.org/posts/196505.json9"
+    }
+  },
+  "transaction": {
+    "hash": "0xab0d76161b329074a8294da16719de56ac9a3f5b5e21eb82f64c7a1c514cebb9",
+    "fromAddress": "0xB1A4d9Ff24D72C5dF4FF73df6B1B829e4557576a",
+    "toAddress": "0x661F31a2017CFC3Cd48D0D6b6978415FAf0A6c59",
+    "status": 7,
+    "statusName": "FINALIZED",
+    "txExecutionResult": 1,
+    "txExecutionResultName": "FINISHED_WITH_RETURN",
+    "result": 1,
+    "votes": {
+      "0x1dA3a7de8EA65A318bf88Eb63d3dC55295Dd257E": "idle",
+      "0x5cDf4BdDeEDa0e32ED596b94f69AcC0FbB57f264": "agree",
+      "0x8D32eb5D0207f7E230C45e7BF0D14B2ED5DA3028": "agree",
+      "0xA793D9dc0ED9edC1f9F732bB68b5D3AFA934F52D": "idle",
+      "0xcF5Fd792Df0Dc9d297af75c82B4A0011e8FA1A4A": "agree"
+    },
+    "leaders": [
+      {
+        "vote": null,
+        "executionResult": "SUCCESS",
+        "resultBase64": "AAA=",
+        "stderr": "",
+        "stdout": "",
+        "rawError": null,
+        "errorCode": null,
+        "errorDescription": null
+      },
+      {
+        "vote": "idle",
+        "executionResult": "ERROR",
+        "resultBase64": "AmlkbGU=",
+        "stderr": "Validator execution cancelled after quorum",
+        "stdout": "",
+        "rawError": {
+          "fatal": false,
+          "causes": [
+            "VALIDATOR_QUORUM_REACHED"
+          ]
+        },
+        "errorCode": "CONSENSUS_VALIDATOR_QUORUM_REACHED",
+        "errorDescription": null
+      }
+    ],
+    "validators": [
+      {
+        "vote": "agree",
+        "executionResult": "SUCCESS",
+        "resultBase64": "AAA=",
+        "stderr": "",
+        "stdout": "",
+        "rawError": null,
+        "errorCode": null,
+        "errorDescription": null
+      },
+      {
+        "vote": "agree",
+        "executionResult": "SUCCESS",
+        "resultBase64": "AAA=",
+        "stderr": "",
+        "stdout": "",
+        "rawError": null,
+        "errorCode": null,
+        "errorDescription": null
+      },
+      {
+        "vote": "agree",
+        "executionResult": "SUCCESS",
+        "resultBase64": "AAA=",
+        "stderr": "",
+        "stdout": "",
+        "rawError": null,
+        "errorCode": null,
+        "errorDescription": null
+      },
+      {
+        "vote": "idle",
+        "executionResult": "ERROR",
+        "resultBase64": "AmlkbGU=",
+        "stderr": "Validator execution cancelled after quorum",
+        "stdout": "",
+        "rawError": {
+          "fatal": false,
+          "causes": [
+            "VALIDATOR_QUORUM_REACHED"
+          ]
+        },
+        "errorCode": "CONSENSUS_VALIDATOR_QUORUM_REACHED",
+        "errorDescription": null
+      }
+    ]
+  },
+  "receipt": {
+    "transactionHash": "0xab0d76161b329074a8294da16719de56ac9a3f5b5e21eb82f64c7a1c514cebb9",
+    "status": "0x1",
+    "from": "0xB1A4d9Ff24D72C5dF4FF73df6B1B829e4557576a",
+    "to": "0xb7278a61aa25c888815afc32ad3cc52ff24fe575",
+    "blockNumber": "0x0"
+  },
+  "lifecycle": {
+    "storedStatus": "Finalized",
+    "storedStatusCode": 7,
+    "projectedStatus": "Finalized",
+    "projectedStatusCode": 7,
+    "resolutionAction": "NoOp",
+    "resolutionActionCode": 0,
+    "resolutionSource": "Unspecified",
+    "resolutionSourceCode": 0,
+    "decisionId": null,
+    "decisionActive": false,
+    "evaluatedAt": 1790683270
+  },
+  "getCase": {
+    "caseId": "python-3130-final-1790441362822",
+    "raw": "{\"schema_version\":1,\"case_id\":\"python-3130-final-1790441362822\",\"milestone_url\":\"https://discuss.python.org/t/62694.json\",\"evidence_url_1\":\"https://discuss.python.org/posts/195069.json\",\"evidence_url_2\":\"https://discuss.python.org/posts/196505.json\",\"requested_days\":7,\"verdict\":\"INSUFFICIENT_EVIDENCE\",\"approved_days\":0,\"responsible_party\":\"UNKNOWN\",\"reason_code\":\"EXTRACTION_FAILED\",\"explanation\":\"The model assessment could not be parsed or its extracted facts failed strict validation.\"}",
+    "parsed": {
+      "schema_version": 1,
+      "case_id": "python-3130-final-1790441362822",
+      "milestone_url": "https://discuss.python.org/t/62694.json",
+      "evidence_url_1": "https://discuss.python.org/posts/195069.json",
+      "evidence_url_2": "https://discuss.python.org/posts/196505.json",
+      "requested_days": 7,
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "approved_days": 0,
+      "responsible_party": "UNKNOWN",
+      "reason_code": "EXTRACTION_FAILED",
+      "explanation": "The model assessment could not be parsed or its extracted facts failed strict validation."
+    },
+    "classification": "FAIL_CLOSED"
+  }
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Read stored DeadlineCheck cases on GenLayer Studio-dev." />
+    <title>DeadlineCheck · Case reader</title>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="masthead">
+        <div class="brand"><span class="brand-mark" aria-hidden="true">D</span><span>DeadlineCheck</span></div>
+        <span class="network">Studio-dev · chain 61997</span>
+      </header>
+
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">EXPERIMENTAL PROTOTYPE / READ ONLY</p>
+        <h1 id="page-title">Inspect a stored case.</h1>
+        <p class="lead">Look up a case ID on the live GenLayer Studio-dev contract. This page reads existing state and needs no wallet.</p>
+        <div class="notice" role="note">
+          <span class="notice-icon" aria-hidden="true">!</span>
+          <p>The verified Python case stored <strong>INSUFFICIENT_EVIDENCE / EXTRACTION_FAILED / 0 approved days</strong>. It is a fail-closed result, not a substantive delay judgment.</p>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="lookup-title">
+        <div class="panel-heading">
+          <div><p class="eyebrow">ON-CHAIN LOOKUP</p><h2 id="lookup-title">Find a case</h2></div>
+          <span class="method">get_case(case_id)</span>
+        </div>
+        <form id="case-form" novalidate>
+          <label for="case-id">Case ID</label>
+          <div class="input-row">
+            <input id="case-id" name="case_id" type="text" autocomplete="off" spellcheck="false" maxlength="64" placeholder="Enter a case ID" aria-describedby="case-hint" />
+            <button id="read-button" type="submit">Read case <span aria-hidden="true">→</span></button>
+          </div>
+          <p id="case-hint" class="hint">3–64 lowercase letters, digits, underscores, or hyphens. The first character must be a letter or digit.</p>
+        </form>
+        <p class="example">Try the <a id="verified-case-link" href="?case_id=python-3130-final-1790441362822">verified Python 3.13.0 case</a>.</p>
+      </section>
+
+      <section class="panel result-panel" aria-labelledby="result-title">
+        <div class="panel-heading"><div><p class="eyebrow">CONTRACT RESPONSE</p><h2 id="result-title">Stored record</h2></div></div>
+        <div id="status" class="status" role="status" aria-live="polite">Enter a case ID to read its stored record.</div>
+        <dl id="case-record" class="record" hidden></dl>
+      </section>
+
+      <footer>
+        <p>Contract <code id="contract-address">0x661F31a2017CFC3Cd48D0D6b6978415FAf0A6c59</code></p>
+        <p><a id="explorer-link" href="https://explorer-studio-dev.genlayer.com/address/0x661F31a2017CFC3Cd48D0D6b6978415FAf0A6c59" target="_blank" rel="noopener noreferrer">View contract in Studio-dev Explorer ↗</a></p>
+        <p class="footnote">Studio-dev is a preview network. Its state and availability may change.</p>
+      </footer>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

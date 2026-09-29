@@ -1,0 +1,8 @@
+node_modules/
+.venv/
+.tool-home/
+.genvm-cache/
+.pytest_cache/
+__pycache__/
+artifacts/
+frontend/dist/
